@@ -28,7 +28,10 @@ class _MyAppState extends State<MyApp> {
             children: const [
               CircleAvatar(
                 radius: 100,
-                backgroundImage: NetworkImage('https://arnaut.me/data/me3.jpg'),
+                backgroundImage: NetworkImage(
+                  'https://cros-anywhere.herokuapp.com/https://arnaut.me/data/me3.jpg',
+                  headers: {},
+                ),
               ),
               Text(
                 'Mirza Arnaut',
