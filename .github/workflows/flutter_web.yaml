@@ -15,7 +15,7 @@ jobs:
         with:
           channel: "stable"
       - run: flutter pub get
-      - run: flutter test
+      # - run: flutter test
       - run: flutter build web --base-href /flutter_webpage/ --release
 
       - name: Commit documentation changes
